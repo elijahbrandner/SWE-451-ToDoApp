@@ -1,4 +1,8 @@
 package com.example.demo.repository;
 
-public class TaskRepository {
+import com.example.demo.model.Task;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface TaskRepository extends MongoRepository<Task, String> {
+    //? Will add custom database queries in this file later
 }
